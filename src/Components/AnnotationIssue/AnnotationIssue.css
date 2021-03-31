@@ -1,0 +1,25 @@
+.addComs{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.inputAddComm{
+    font-size: 14px;
+    width:100%
+}
+
+.annotationIssue{
+    font-size: .9rem;
+}
+
+select {
+    font-size: .95rem;
+ }
+
+ .custom-select{
+    font-size: .9rem !important;
+    height: calc(1.5em + 3px) !important;
+    padding: 0 !important;
+    margin-bottom:5%;
+    
+ }

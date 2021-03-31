@@ -1,0 +1,32 @@
+.imagePlaceholder{
+    background-color: lightgrey;
+    min-height: 50vh;
+}
+.report{
+    margin-top: 1%;
+}
+.uploadedImage{
+    width:100%;
+    height: auto;
+}
+
+.imgAnnot{
+    padding-left: 3%;
+}
+
+html {
+    overflow-y: scroll; 
+  }
+
+ .genMsg{
+    display: none;
+ }
+
+ @media print
+{  
+    .genMsg{
+        display: block;
+     } 
+}
+
+  

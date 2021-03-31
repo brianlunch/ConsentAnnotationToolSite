@@ -1,0 +1,69 @@
+.annotation{
+
+    border: 1px solid black;
+}
+
+.annotateRow{
+    padding: 10px;
+}
+
+.titleRow{
+    margin-bottom: 2%;
+}
+
+.imageSide{
+    border-right: 1px solid black;
+}
+
+
+
+.annotation{
+    cursor: crosshair;
+}
+
+.doc{
+    display: block !important;
+    width:70%;
+    padding:2%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-select2{
+    font-size: .9rem !important;
+    height: calc(1.5em + 3px) !important;
+    padding: 0 !important;
+    margin-bottom:5%;
+    width: 100%;
+    
+ }
+
+
+
+@media print
+{    
+    .tab-pane{
+        display: block !important;
+    }
+
+    .fade:not(.show) {
+        opacity: 100 !important;
+    }
+
+   
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+    .doc{
+        display: block !important;
+        width:100% !important;
+        border: none !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+}
