@@ -148,55 +148,56 @@ const AnnotationIssue = (props) => {
     };
 
     return (
-        <div
-            onMouseOver={props.mouseOver(props.annotation.data.id)}
-            onMouseOut={props.mouseOut(props.annotation.data.id)}
-            key={props.annotation.data.id}
-            className="annotationIssue col-11"
-            style={styles}
-        >
+        <div className="">
             <div
-                onClick={() => setOpen(!open)}
-                aria-controls={props.annotation.data.id}
-                aria-expanded={open}
-                className="issueHeader row"
-                name={props.annotation.data.id}
+                onMouseOver={props.mouseOver(props.annotation.data.id)}
+                onMouseOut={props.mouseOut(props.annotation.data.id)}
+                key={props.annotation.data.id}
+                className="annotationIssue "
+
             >
-                <div class="col-2 text-left">
-                    <h4>{props.annotation.data.text + 1}</h4>
-                </div>
+                <div
+                    onClick={() => setOpen(!open)}
+                    aria-controls={props.annotation.data.id}
+                    aria-expanded={open}
+                    className="issueHeader row"
+                    name={props.annotation.data.id}
+                >
+                    <div class="col-2 text-left text-theme">
+                        <h4>{props.annotation.data.text + 1}</h4>
+                    </div>
 
 
-                <div class="col-10 text-right">
-                    <h4 className="">{open ? <FaChevronUp /> : <FaChevronDown />}</h4>
+                    <div class="col-10 text-right text-theme">
+                        <h4 className="">{open ? <FaChevronUp /> : <FaChevronDown />}</h4>
+                    </div>
+
                 </div>
+                <Collapse in={open} className="options">
+                    <div id={props.annotation.data.id}>
+
+                        <p>Domain:</p>
+                    <select onChange={(e) => { setDomain(e.target.value); handleChangeDD(props, props.annotation.data.text, domain); }} className="custom-select mr-sm-2" id="inlineFormCustomSelect" name="duration">
+                            {issues.map((issue, index) => <option value={index}>{issue.domain}</option>)}
+                        </select>
+
+
+
+
+                        {issues[domain].terms.map((issue, index) => <div class="form-check">
+                            <form onChange={e => handleChange(props, e, domain)}>
+                                <input class="form-check-input" type="checkbox" checked={props.issues != undefined && props.issues[props.annotation.data.text] != undefined ? props.issues[props.annotation.data.text].issue[index] : null} name={index} id={props.annotation.data.id} value={issue.value} />
+                                <label class="form-check-label" for="exampleRadios1">
+                                    {issue.value}
+                                </label>
+                            </form>
+                            {isChecked(props, props.annotation.data.text, index) ? <form onChange={e => handleChangeCB(props, e, domain)}><label className="addComs">Additional Comments</label><br/><textarea className="inputAddComm" name={index} id={props.annotation.data.id} /></form> : null}
+                        </div>)}
+                    </div>
+                </Collapse>
 
             </div>
-            <Collapse in={open} className="options">
-                <div id={props.annotation.data.id}>
-
-                    Domain:
-                    <select onChange={(e) => { setDomain(e.target.value); handleChangeDD(props, props.annotation.data.text, domain); }} className="custom-select mr-sm-2" id="inlineFormCustomSelect" name="duration">
-                        {issues.map((issue, index) => <option value={index}>{issue.domain}</option>)}
-                    </select>
-
-
-
-
-                    {issues[domain].terms.map((issue, index) => <div class="form-check">
-                        <form onChange={e => handleChange(props, e, domain)}>
-                            <input class="form-check-input" type="checkbox" checked={props.issues != undefined && props.issues[props.annotation.data.text] != undefined ? props.issues[props.annotation.data.text].issue[index] : null} name={index} id={props.annotation.data.id} value={issue.value} />
-                            <label class="form-check-label" for="exampleRadios1">
-                                {issue.value}
-                            </label>
-                        </form>
-                        {isChecked(props, props.annotation.data.text, index) ? <form onChange={e => handleChangeCB(props, e, domain)}><label className="addComs">Additional Comments</label><textarea className="inputAddComm" name={index} id={props.annotation.data.id} /></form> : null}
-                    </div>)}
-                </div>
-            </Collapse>
-
         </div>
-
     );
 };
 

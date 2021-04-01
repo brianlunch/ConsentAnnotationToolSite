@@ -290,7 +290,7 @@ export default class ImageAnnotation extends Component {
     }
 
 
-    renderHello = (props, index, templateNo) => {
+    renderHello = (props, index, templateNo, url, time) => {
 
 
         var boxes = [];
@@ -342,6 +342,8 @@ export default class ImageAnnotation extends Component {
 
         {
             /*
+            url:,
+            time:,
             boxes : [
                 {
                     "number": index of the annotation box (Integer),
@@ -365,7 +367,7 @@ export default class ImageAnnotation extends Component {
             */
         }
 
-        var data = { boxes: boxes }
+        var data = { url:url, time:time,boxes: boxes }
         console.log(data)
         var id = "mustache"+index;
         console.log(templateNo)
@@ -380,8 +382,8 @@ export default class ImageAnnotation extends Component {
 
     render() {
         var userAnnots = this.props.props;
-     
-        this.renderHello(userAnnots, this.props.i, this.props.template);
+        console.log(this.props)
+        this.renderHello(userAnnots, this.props.i, this.props.template, this.props.url,this.props.time);
 
         return (
             <div>
@@ -406,15 +408,10 @@ export default class ImageAnnotation extends Component {
                         renderContent={renderContent}
                         renderOverlay={renderOverlay}
                     />
-                    <br />
-                    <div className=""><h4>Link to Webpage</h4><a href={this.props.url} id="url">{this.props.url}</a></div>
-                    <br />
-                    <div className=""><h4>Time of Screenshot </h4><p id="time">{this.props.time}</p></div>
-
-
+                   
 
                     <div id={"mustache"+this.props.i}>
-                        <h1>?</h1>
+                        <h1></h1>
                     </div>
 
                 </div>

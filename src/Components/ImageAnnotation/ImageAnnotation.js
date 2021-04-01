@@ -302,31 +302,9 @@ export default class ImageAnnotation extends Component {
 
                 <div class="row annotateRow no-print">
                     <div class="col-8 imageSide">
-                        <div class="row titleRow">
-                            <div class="col-12 text-left">
-                                <h4>Click and drag mouse to highlight problematic areas of the image.</h4>
-                            </div>
 
 
-                            {/*
-                            <div class="col-2">
-                                <button className="btn btn-outline-dark" onClick={this.onChangeType}>
-                                    {RectangleSelector.TYPE}
-                                </button>
-                            </div>
-                            <div class="col-2">
-                                <button className="btn btn-outline-dark" onClick={this.onChangeType}>
-                                    {PointSelector.TYPE}
-                                </button>
-                            </div>
-                            */
-                            }
-                        </div>
-                        <div className="row">
-                            <p>Image Source: <a target="_blank" href={this.props.url}>{this.props.url}</a></p>
-                        </div>
-
-                        <div className="annotation">
+                        <div className="annotation col-12">
 
                             <Annotation
                                 src={this.props.img}
@@ -347,15 +325,33 @@ export default class ImageAnnotation extends Component {
                             />
                         </div>
                         <br />
+                        <div className="row align-items-end">
+
+                            <div className="col-6 text-left ">
+                                <p>{"Image source: " + this.props.url}</p>
+                                <p className="m-0">{"Time Captured: " + this.props.time}</p>
+                            </div>
+
+                            <div class="col-6 text-left">
+                                <i>Choose a Document Template (Preview Below):</i>
+                                
+                                <select onChange={(e) => this.setState({ template: e.target.value })} className="custom-select2 mr-sm-2" id="inlineFormCustomSelect" name="duration">
+                                    {templates.map((template, index) => <option value={index}>{template.name}</option>)}
+                                </select>
+                                <br/>
+                                <button className="btn btn-theme w-100" onClick={function (e) { window.print(); }}>Save Document</button>
+                            </div>
+                        </div>
 
                     </div>
+
                     <div class="col-4  text-left">
 
                         <div className="row">
-                            <h4 className="col-7">Annotations</h4>
+                            <h4 className="col-7 text-theme">Annotations</h4>
 
                             <div class="col-4 text-right">
-                                <button className="btn btn-outline-dark" onClick={this.clearAll}>Clear All</button>
+                                <button className="btn-theme btn " onClick={this.clearAll}>Clear All</button>
                             </div>
 
                         </div>
@@ -369,19 +365,7 @@ export default class ImageAnnotation extends Component {
                             onMouseOver={this.onMouseOver}
                             onMouseOut={this.onMouseOut}
                         />
-                        <div className="row align-items-end">
-                        
-                        <div class="col-5 text-center">
-                        Document Template:
-                            <select onChange={(e) => this.setState({ template: e.target.value })} className="custom-select2 mr-sm-2" id="inlineFormCustomSelect" name="duration">
-                                {templates.map((template, index) => <option value={index}>{template.name}</option>)}
-                            </select>
-                        </div>
-                        <div class="col-7 text-center">
-                            
-                            <button className="btn btn-outline-dark col-8" onClick={function (e) { window.print(); }}>Save Document</button>
-                        </div>
-                        </div>
+
                     </div>
 
 

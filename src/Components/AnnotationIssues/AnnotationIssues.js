@@ -43,25 +43,21 @@ function AnnotationIssues(props) {
 
 
     return (
-        <div>
-            <div className="maxH">
+        <div className=" text-left maxH col-11 align-items-start">
+           <br />
                 {props.annotations.map(annotation => (
-                    <div>
+                    
                         <AnnotationIssue
-
                             annotation={annotation}
                             mouseOver={props.onMouseOver}
                             mouseOut={props.onMouseOut}
                             issues={props.issues}
 
                         />
-                    </div>
+                    
                 ))}
-            </div>
-
-            <div className="row justify-content-center">
-              
-            </div>
+            
+        
 
         </div>
     );

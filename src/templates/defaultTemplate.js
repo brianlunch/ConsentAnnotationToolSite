@@ -1,11 +1,19 @@
 var defaultTemplate = 
 `
-<h1>Default Template</h1> 
-<div className =\"boxBorder\"> 
-{{#boxes}} <h1>{{number}} - {{domain}}</h1> 
-<br/> 
+<br/>
+<h1>Consent Issues Report</h1> 
+<br/>
+<p>This report highlights the issues found in the consent dialogue box on the website <a target="_blank" href={{url}}>{{url}}</a> as of {{time}}.</p>
+<p>The issues are highlighted in the image above. Each highlighted area has been annotated and automatically associated with the laws it may have violated.</p>
+<br/>
+<div style =\"border:1px solid black; padding: 2%;\"> 
+{{#boxes}} 
+<h2>Highligted Issue #{{number}}</h2> 
+<p><b>Domain Used: </b> {{domain}}</p>
+
 {{#issues}} 
-<h3>Issue Name: {{name}}</h3> 
+<br/>
+<h4>Issue Name: {{name}}</h4> 
 <p>User Comments:{{cmnt}}</p> 
 
 <ul> 

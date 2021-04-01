@@ -1,6 +1,6 @@
 {
-  "homepage": "http://brianlunch.github.io/gdpreportReact",
-  "name": "gdpreport",
+  "homepage": "http://brianlunch.github.io/ConsentAnnotationToolSite",
+  "name": "GDPReportStudy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

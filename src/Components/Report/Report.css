@@ -2,9 +2,14 @@
     background-color: lightgrey;
     min-height: 50vh;
 }
-.report{
-    margin-top: 1%;
+
+
+.nav-link.active{
+    border: 2px solid darkslateblue !important;
+    border-bottom: none;
+    color: darkslateblue !important;
 }
+
 .uploadedImage{
     width:100%;
     height: auto;
