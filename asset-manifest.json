@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ConsentAnnotationToolSite/static/css/main.66ca1756.chunk.css",
-    "main.js": "/ConsentAnnotationToolSite/static/js/main.e3e4f38b.chunk.js",
-    "main.js.map": "/ConsentAnnotationToolSite/static/js/main.e3e4f38b.chunk.js.map",
+    "main.js": "/ConsentAnnotationToolSite/static/js/main.f2a54bb8.chunk.js",
+    "main.js.map": "/ConsentAnnotationToolSite/static/js/main.f2a54bb8.chunk.js.map",
     "runtime-main.js": "/ConsentAnnotationToolSite/static/js/runtime-main.e182b6d5.js",
     "runtime-main.js.map": "/ConsentAnnotationToolSite/static/js/runtime-main.e182b6d5.js.map",
     "static/css/2.1a02f21c.chunk.css": "/ConsentAnnotationToolSite/static/css/2.1a02f21c.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.d3ff27bb.chunk.js",
     "static/css/main.66ca1756.chunk.css",
-    "static/js/main.e3e4f38b.chunk.js"
+    "static/js/main.f2a54bb8.chunk.js"
   ]
 }
