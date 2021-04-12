@@ -4,6 +4,7 @@ import history from './Utils/History';
 import Home from './Pages/Home'
 import Report from './Pages/Report'
 import Study from './Pages/Study'
+import HowTo from './Pages/HowTo'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -16,9 +17,10 @@ function App() {
       
       <Router basename={process.env.PUBLIC_URL} history={history}>
         <Switch>
-          <Route exact path="/" component={Report} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/HowTo" component={HowTo} />
           <Route exact path="/report" component={Report} />
-          <Route exact path="/reported" component={Reported}/>
+          <Route exact path="/reported" component={Report}/>
           <Route exact path="/study" component={Study}/>
         </Switch>
       </Router>

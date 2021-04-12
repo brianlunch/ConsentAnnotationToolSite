@@ -1,3 +1,7 @@
 .info{
     height:100vh;
 }
+
+.zoom:hover{
+    transform: scale(1.5);  
+}

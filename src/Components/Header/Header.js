@@ -1,10 +1,11 @@
 import React from 'react';
 import HeaderItem from '../HeaderItem/HeaderItem'
 import Title from '../Title/Title'
-import {Link as ScrollLink} from 'react-scroll'
-import {Link} from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import './Header.css'
-import {FaQuestionCircle, FaExclamationCircle, FaChartLine} from 'react-icons/fa'
+import { FaQuestionCircle, FaGithub, FaChrome } from 'react-icons/fa'
+
 
 class Header extends React.Component {
     constructor(props) {
@@ -15,45 +16,43 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header" id="home">
-           
-            <div class="row text-left">
-                <div class="col-5">
-                    <Title title="GDPReport" subtitle="A tool for reporting websites that breach GDPR consent rules"/>
-                </div>
-                <div class="col-7 card-deck text-center">
-                    <div class="row">
-                        <div class="col">
-                        <ScrollLink 
-                            activeClass="active"
-                            to="info"
-                            spy={true}
-                            smooth={true}
-                            offset={-60}
-                            duration= {500}
-                            >
-                             <HeaderItem title="Find out more"><FaQuestionCircle/></HeaderItem>
-                        </ScrollLink>
-                       
+
+                <div class="row text-center justify-content-center">
+                    <div class="col-12">
+                        <Title title="Consent Annotation Tool" subtitle="A tool to link legal clauses to user highlighted issues in consent dialogues." />
+                        <br />
+                    </div>
+
+                    <div class="col-12 card-deck text-center justify-content-center">
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-3">
+                                <a target="_blank" href ="https://github.com/brianlunch/ConsentAnnotationTool">
+                                    <HeaderItem title="Chrome Extension"><FaChrome /></HeaderItem>
+                                </a>
+
+                            </div>
+
+                            <div class="col-12 col-lg-3">
+                                <Link
+                                    to="HowTo"
+                                >
+                                    <HeaderItem title="How to Use"><FaQuestionCircle /></HeaderItem>
+                                </Link>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                 <a target="_blank" href ="https://github.com/brianlunch/ConsentAnnotationTool">
+                                <HeaderItem title="Project Github"><FaGithub /></HeaderItem>
+                                </a>
+                            </div>
+
+
+
                         </div>
 
-                        <div class="col">
-                        <Link
-                            to="report"
-                            >
-                        <HeaderItem title="Report a Site "><FaExclamationCircle/></HeaderItem>
-                        </Link>
-                        </div>
-                        <div class="col">
-                        <HeaderItem title="Reported Sites"><FaChartLine/></HeaderItem>
-                        </div>
-                    
-                   
-                    
                     </div>
-                    
                 </div>
             </div>
-        </div>
         );
     }
 }

@@ -1,6 +1,6 @@
 .header{
     margin: 5%;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 a:hover{
@@ -10,4 +10,9 @@ a:hover{
 a{
     text-decoration: inherit !important;
     color: inherit !important;
+}
+
+.howTo{
+    padding: 5%;
+    padding-bottom: 0;
 }

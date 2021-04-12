@@ -1,6 +1,6 @@
 {
   "homepage": "http://brianlunch.github.io/ConsentAnnotationToolSite",
-  "name": "GDPReportStudy",
+  "name": "ConsentAnnotationToolSite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

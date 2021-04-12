@@ -16,3 +16,7 @@
     border: 1.75px solid rgb(150, 150, 150);
     cursor: pointer;
 }
+
+.zoom{
+    transform: scale(1.1);  
+}

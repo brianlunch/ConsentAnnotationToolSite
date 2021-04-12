@@ -11,7 +11,7 @@ class HeaderItem extends React.Component {
         return (
             <div className = "headerItem">
             <h1>{this.props.children}</h1>
-            <h1>{this.props.title}</h1>
+            <h2>{this.props.title}</h2>
             
         </div>
         );

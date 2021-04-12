@@ -6,8 +6,9 @@ var defaultTemplate =
 <p>This report highlights the issues found in the consent dialogue box on the website <a target="_blank" href={{url}}>{{url}}</a> as of {{time}}.</p>
 <p>The issues are highlighted in the image above. Each highlighted area has been annotated and automatically associated with the laws it may have violated.</p>
 <br/>
-<div style =\"border:1px solid black; padding: 2%;\"> 
+
 {{#boxes}} 
+<div style =\"border:1px solid black; padding: 2%;\"> 
 <h2>Highligted Issue #{{number}}</h2> 
 <p><b>Domain Used: </b> {{domain}}</p>
 
@@ -24,9 +25,10 @@ var defaultTemplate =
 </li> 
 {{/laws}} 
 </ul> 
-{{/issues}} 
+{{/issues}}
+</div> 
 {{/boxes}} 
-</div>
+
 `;
 
 export default defaultTemplate;

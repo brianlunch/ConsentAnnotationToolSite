@@ -20,7 +20,7 @@
 .navbar.active {
     background: white;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-    color: ;
+    
 }
 .navbar.active .nav-logo{
     height:50px;
@@ -33,7 +33,7 @@
     cursor: pointer;
     text-decoration:none;
     transition: 0.2s;
-    color:#8bd3dd !important;
+    color:lightsteelblue !important;
 }
 
 
@@ -64,12 +64,6 @@
 
 
 
-@media (max-width: 768px) { 
-    .navbar{
-    display: none !important;
-    }
-    }
-
     .nav-link {
         color: rgb(0,0,0);
         font-size: larger;
@@ -80,9 +74,9 @@
     }
 
     .nav-link--active {
-        border-bottom: 3px solid #f582ae;
+        border-bottom: 3px solid darkslateblue;
         transition: border-bottom .5s ease-in-out;
-        color:#f582ae !important;
+        color:darkslateblue !important;
       }
       
  

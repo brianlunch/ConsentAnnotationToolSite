@@ -44,7 +44,7 @@ const Nav = ({user}) => {
     return (
     <nav className={classThree}>
         <div className="container">
-            <h2>GDPReport</h2>
+            <h3>Consent Annotation Tool</h3>
             <button  onClick={toggleNavbar} className={`${classTwo}`} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <FaBars size={20} color="black"/>
             </button>
@@ -59,27 +59,16 @@ const Nav = ({user}) => {
                             Home
                         </NavLink>
                     </li>
-                    <li className="nav-item">
-                        <ScrollLink className="nav-link"
-                            activeClass="active"
-                            to="info"
-                            spy={true}
-                            smooth={true}
-                            offset={-60}
-                            duration= {500}
-                            >
-                            More Info
-                        </ScrollLink>
-                    </li>
+                    
 
                     <li className="nav-item">
                         <NavLink
                             className="nav-link"
                             exact activeClassName="nav-link--active"
-                            to="report"
+                            to="HowTo"
                           
                             >
-                            Report Site
+                            How to Use
                         </NavLink>
                     </li>
                     <li className="nav-item">
@@ -89,7 +78,7 @@ const Nav = ({user}) => {
                             to="reported"
                             
                             >
-                            Reoported Sites
+                            Annotation Tool
                         </NavLink>
                     </li>
                     

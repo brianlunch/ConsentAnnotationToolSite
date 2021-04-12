@@ -15,6 +15,7 @@ class ReportPage extends React.Component {
     render() {
         return (
             <div>
+                <Navbar/>
                 <Report/>
 
                 
