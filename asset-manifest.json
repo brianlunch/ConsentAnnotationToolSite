@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ConsentAnnotationToolSite/static/css/main.76893534.chunk.css",
-    "main.js": "/ConsentAnnotationToolSite/static/js/main.3ddb9220.chunk.js",
-    "main.js.map": "/ConsentAnnotationToolSite/static/js/main.3ddb9220.chunk.js.map",
+    "main.css": "/ConsentAnnotationToolSite/static/css/main.91f68987.chunk.css",
+    "main.js": "/ConsentAnnotationToolSite/static/js/main.0f7a9bd7.chunk.js",
+    "main.js.map": "/ConsentAnnotationToolSite/static/js/main.0f7a9bd7.chunk.js.map",
     "runtime-main.js": "/ConsentAnnotationToolSite/static/js/runtime-main.7d7f88f2.js",
     "runtime-main.js.map": "/ConsentAnnotationToolSite/static/js/runtime-main.7d7f88f2.js.map",
     "static/css/2.1a02f21c.chunk.css": "/ConsentAnnotationToolSite/static/css/2.1a02f21c.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.a663ea67.chunk.js.map": "/ConsentAnnotationToolSite/static/js/3.a663ea67.chunk.js.map",
     "index.html": "/ConsentAnnotationToolSite/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/ConsentAnnotationToolSite/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.76893534.chunk.css.map": "/ConsentAnnotationToolSite/static/css/main.76893534.chunk.css.map",
+    "static/css/main.91f68987.chunk.css.map": "/ConsentAnnotationToolSite/static/css/main.91f68987.chunk.css.map",
     "static/js/2.81c91033.chunk.js.LICENSE.txt": "/ConsentAnnotationToolSite/static/js/2.81c91033.chunk.js.LICENSE.txt",
     "static/media/DocGif.684994f5.gif": "/ConsentAnnotationToolSite/static/media/DocGif.684994f5.gif",
     "static/media/Facebook1.d92edc62.PNG": "/ConsentAnnotationToolSite/static/media/Facebook1.d92edc62.PNG",
     "static/media/Facebook2.ea73acca.PNG": "/ConsentAnnotationToolSite/static/media/Facebook2.ea73acca.PNG",
     "static/media/Facebook3.57efd33f.PNG": "/ConsentAnnotationToolSite/static/media/Facebook3.57efd33f.PNG",
     "static/media/Facebook4.55300bf5.PNG": "/ConsentAnnotationToolSite/static/media/Facebook4.55300bf5.PNG",
-    "static/media/Google1.34c6a927.PNG": "/ConsentAnnotationToolSite/static/media/Google1.34c6a927.PNG",
+    "static/media/Google1.1dc938c2.PNG": "/ConsentAnnotationToolSite/static/media/Google1.1dc938c2.PNG",
     "static/media/Google2.84049a4f.PNG": "/ConsentAnnotationToolSite/static/media/Google2.84049a4f.PNG",
     "static/media/Google3.93c0c8da.PNG": "/ConsentAnnotationToolSite/static/media/Google3.93c0c8da.PNG",
     "static/media/HowTo.9a383530.gif": "/ConsentAnnotationToolSite/static/media/HowTo.9a383530.gif",
@@ -32,7 +32,7 @@
     "static/media/Netflix4.23b06923.PNG": "/ConsentAnnotationToolSite/static/media/Netflix4.23b06923.PNG",
     "static/media/Netflix5.1d55c8cc.PNG": "/ConsentAnnotationToolSite/static/media/Netflix5.1d55c8cc.PNG",
     "static/media/Reddit1.695b1db9.PNG": "/ConsentAnnotationToolSite/static/media/Reddit1.695b1db9.PNG",
-    "static/media/Reddit2.ff0f7b7a.PNG": "/ConsentAnnotationToolSite/static/media/Reddit2.ff0f7b7a.PNG",
+    "static/media/Reddit2.9378fad9.PNG": "/ConsentAnnotationToolSite/static/media/Reddit2.9378fad9.PNG",
     "static/media/Reddit3.677e1dd8.PNG": "/ConsentAnnotationToolSite/static/media/Reddit3.677e1dd8.PNG",
     "static/media/Reddit4.177289f2.PNG": "/ConsentAnnotationToolSite/static/media/Reddit4.177289f2.PNG",
     "static/media/Reddit5.01f861c6.PNG": "/ConsentAnnotationToolSite/static/media/Reddit5.01f861c6.PNG",
@@ -47,7 +47,7 @@
     "static/js/runtime-main.7d7f88f2.js",
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.81c91033.chunk.js",
-    "static/css/main.76893534.chunk.css",
-    "static/js/main.3ddb9220.chunk.js"
+    "static/css/main.91f68987.chunk.css",
+    "static/js/main.0f7a9bd7.chunk.js"
   ]
 }
