@@ -1,6 +1,10 @@
 var gdprTemplate = 
 `
-<h1>GDPR Template</h1> 
+<br/>
+<h1>GDPR violations by {{url}}</h1> 
+<br/>
+<p>This report highlights the violations of GDPR clauses found in the consent dialogue box on the website <a target="_blank" href={{url}}>{{url}}</a> as of {{time}}.</p>
+<br/>
 <div className =\"boxBorder\"> 
 {{#boxes}}
 <h1>{{number}} - {{domain}}- GDPR</h1> 
