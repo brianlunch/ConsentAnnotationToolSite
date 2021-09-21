@@ -2,9 +2,10 @@
 import React from 'react';
 import ImageAnnotation from '../ImageAnnotation/ImageAnnotation';
 import './Report.css'
-import it from '../../images/IrishTimes.PNG'
-import consent from '../../images/consent.png'
-import test from '../../images/test.jpg'
+import FB1 from '../../images/FB1.png'
+import FB2 from '../../images/FB2.png'
+import FB3 from '../../images/FB3.png'
+import FB4 from '../../images/FB4.png'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Help from '../Help/Help';
@@ -37,6 +38,7 @@ class Report extends React.Component {
 
         var images = [
             {
+<<<<<<< HEAD
                 "img": Facebook1,
                 "url": "www.Facebook.ie",
                 "time": "Wed, 14 Apr 2021 13:17:30 GMT"
@@ -50,6 +52,26 @@ class Report extends React.Component {
                 "img": Facebook3,
                 "url": "www.Facebook.ie",
                 "time": "Wed, 14 Apr 2021 13:17:30 GMT"
+=======
+                "img": FB1,
+                "url": "www.facebook.com",
+                "time": "24/03/2021 18:00 GMT"
+            },
+            {
+                "img": FB2,
+                "url": "www.facebook.com",
+                "time": "24/03/2021 18:00 GMT"
+            },
+            {
+                "img": FB3,
+                "url": "www.facebook.com",
+                "time": "24/03/2021 18:00 GMT"
+            },
+            {
+                "img": FB4,
+                "url": "www.facebook.com",
+                "time": "24/03/2021 18:00 GMT"
+>>>>>>> 701d89903fff86b5da98c347b2885d6703dca644
             }
         ]
 

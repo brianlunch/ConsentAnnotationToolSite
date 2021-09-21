@@ -317,6 +317,7 @@ export default class ImageAnnotation extends Component {
 
                     var problem = {
                         name: issuesJSON[box.domain].terms[i].value,
+                        cmnt_available: box.comments[i].length > 2 ? true : false,
                         cmnt: box.comments[i],
                         laws: laws
                     }

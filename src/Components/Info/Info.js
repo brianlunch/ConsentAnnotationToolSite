@@ -58,23 +58,39 @@ const Info = () => {
                     <div className="col">
                         <h4>Brian Lynch</h4>
                         <p>Project Developer</p>
+<<<<<<< HEAD
                         <div className=" text-center" style={{"paddingLeft":"15px"}}>
                             <a href="https://brianlunch.github.io/Personal/#/" target="_blank"><h4><FaLink className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
+=======
+                        <div className="row" style={{"paddingLeft":"15px"}}>
+                            <a href="https://github.com/brianlunch" target="_blank"><h4><FaGithub className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
+>>>>>>> 701d89903fff86b5da98c347b2885d6703dca644
                         </div>
                     </div>
                     <div className="col">
                         <h4>Harshvardhan Pandit</h4>
                         <p>Project Supervisor</p>
+<<<<<<< HEAD
                         <div className="" style={{"paddingLeft":"15px"}}>
                             <a href="https://harshp.com/" target="_blank"><h4><FaLink className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
                             
+=======
+                        <div className="row" style={{"paddingLeft":"15px"}}>
+                            <a href="https://github.com/coolharsh55" target="_blank"><h4><FaGithub className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
+                            <a href="https://harshp.com/" target="_blank"><h4><FaChrome className="zoom" /></h4></a>
+>>>>>>> 701d89903fff86b5da98c347b2885d6703dca644
                         </div>
                     </div>
                     <div className="col">
                         <h4>Dave Lewis</h4>
                         <p>Project Supervisor</p>
+<<<<<<< HEAD
                         <div className="" style={{"paddingLeft":"15px"}}>
                         <a href="https://www.tcd.ie/research/profiles/?profile=delewis" target="_blank"><h4><FaLink className="zoom"  style={{"marginRight":"12px"}}/></h4></a>  
+=======
+                        <div className="row" style={{"paddingLeft":"15px"}}>
+                            <a href="https://www.scss.tcd.ie/dave.lewis/" target="_blank"><h4><FaChrome className="zoom" /></h4></a>
+>>>>>>> 701d89903fff86b5da98c347b2885d6703dca644
                         </div>
                     </div>
 
