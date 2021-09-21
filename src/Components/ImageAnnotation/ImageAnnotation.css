@@ -1,6 +1,6 @@
 .annotation{
 
-    border: 2px solid darkslateblue !important;
+    border: 1px solid darkslateblue !important;
    
 }
 
@@ -75,6 +75,19 @@
     padding: 0 !important;
     width: 100%;
     
+ }
+
+ .btn-outline-primary{
+     background-color: honeydew;
+ }
+ .btn-outline-primary:hover{
+    background-color:#007bff !important;
+}
+
+ .z{
+     z-index: 10000;
+     position: absolute;
+     background-color: honeydew !important   ;
  }
 
 

@@ -342,28 +342,28 @@ export default class ImageAnnotation extends Component {
 
         {
             /*
-            url:,
-            time:,
+            url: String,
+            time: String,
             boxes : [
                 {
-                    "number": index of the annotation box (Integer),
-                    "domain": the domain used to annotate the box (String),
+                    "number": Integer - index of the annotation box,
+                    "domain": String - the domain used to annotate the box,
                     "issues": An array of the issues ticked in the box ([{}])
                     [  
                         {
-                            "name": The issues text/name (String),
-                            "cmnt": The user comment regarding the issue (String),
+                            "name": String -  The issues text/name,
+                            "cmnt": String - The user comment regarding the issue,
                             "laws": An array of the laws that apply to said issue ([{}])
                             [
                                 {
-                                    "lawName": Name of the law (String),
-                                    "lawDescription": Description of the law (String)
+                                    "lawName": String - Name of the law,
+                                    "lawDescription": String - Description of the law
                                 }
                             ]
                         }
                     ]
                 }
-            ]
+
             */
         }
 

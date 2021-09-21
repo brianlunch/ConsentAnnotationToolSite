@@ -52,7 +52,7 @@ function AnnotationIssues(props) {
                             mouseOver={props.onMouseOver}
                             mouseOut={props.onMouseOut}
                             issues={props.issues}
-
+                            onClickM={props.onClickM}
                         />
                     
                 ))}

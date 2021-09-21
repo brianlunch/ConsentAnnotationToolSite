@@ -3,9 +3,10 @@ import Navbar from '../Components/transparent-nav/Navbar'
 import Help from '../Components/Help/Help'
 import Header from '../Components/Header/Header'
 import Info from '../Components/Info/Info';
-import HowToGif from '../images/HowToHighlight.gif'
-import HowToExt from '../images/HowToExt1.gif'
-import DocGif from '../images/DocGif.gif'
+import HowToGif from '../images/HowToHighlight.webm'
+import HowToExt from '../images/HowToExt1.webm'
+import DocGif from '../images/DocGif.webm'
+import './HowTo.css'
 
 
 const HowTo = () => {
@@ -29,7 +30,9 @@ const HowTo = () => {
                     </ul>
                 </div>
                 <div className="col-xl-5">
-                    <img className="gif" id="gif" src={HowToExt} />
+                    <video className="gif" autoPlay muted loop>
+                        <source src={HowToExt} type="video/mp4" />
+                    </video>
                 </div>
 
             </div>
@@ -46,8 +49,10 @@ const HowTo = () => {
                         <li>Check as many checkboxes as necessary and add additional comments if necessary.</li>
                     </ul>
                 </div>
-                <div className="col-lg-5">
-                    <img className="gif" id="gif" src={HowToGif} />
+                <div className="col-xl-5">
+                <video className="gif" autoPlay muted loop>
+                        <source src={HowToGif} type="video/mp4" />
+                    </video>
                 </div>
             </div>
             <div className="row align-items-end howTo">
@@ -57,14 +62,15 @@ const HowTo = () => {
                     <p>A document is then generated using your annotations  that associates your annotations with legal clauses and articles. This document can then be used to report the possible violations to the appropriate authorities.</p>
                     <h4>Instructions</h4>
                     <ul>
-                        <li>Select an template from the dropdown below the annotated image and click 'Save Document'</li>
                         <li>Scroll down to look at a preview of the document that will be generated for each screenshot.</li>
+
+                        <li>Select an template from the dropdown below the annotated image and click 'Save Document'</li>
 
                         <li>Click save, then choose a location on your PC to store the document and click 'save' again.</li>
                     </ul>
                 </div>
                 <div className="col-lg-5">
-                    <img className="gif" id="gif" src={DocGif} />
+                <video loop autoPlay muted className="gif"  src={DocGif} type="video/xwebm" /> 
                 </div>
             </div>
 

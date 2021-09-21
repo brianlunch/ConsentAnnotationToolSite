@@ -175,17 +175,17 @@ const AnnotationIssue = (props) => {
                 </div>
                 <Collapse in={open} className="options">
                     <div id={props.annotation.data.id}>
-
-                        <p>Domain:</p>
+                        <b>Choose the Domain you are familiar with:</b>
+                        
                     <select onChange={(e) => { setDomain(e.target.value); handleChangeDD(props, props.annotation.data.text, domain); }} className="custom-select mr-sm-2" id="inlineFormCustomSelect" name="duration">
                             {issues.map((issue, index) => <option value={index}>{issue.domain}</option>)}
                         </select>
 
 
 
-
+                        <b>List of possible Issues:</b>
                         {issues[domain].terms.map((issue, index) => <div class="form-check">
-                            <form onChange={e => handleChange(props, e, domain)}>
+                            <form  onChange={e => handleChange(props, e, domain)}>
                                 <input class="form-check-input" type="checkbox" checked={props.issues != undefined && props.issues[props.annotation.data.text] != undefined ? props.issues[props.annotation.data.text].issue[index] : null} name={index} id={props.annotation.data.id} value={issue.value} />
                                 <label class="form-check-label" for="exampleRadios1">
                                     {issue.value}

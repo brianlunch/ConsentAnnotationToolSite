@@ -36,12 +36,14 @@ const Help = (props) => {
 
                         <div className="col-6 text-left">
                             <p>The purpose of this tool is to highlight problematic areas of a consent dialogue box, note the issues with the highlighted areas and generate documenatation that associates your notations with legal clauses and articles</p>
-                            <h4>Instructions</h4>
+                            <b>Instructions</b>
                             <ul>
                                 <li>Click and drag to highlight a possibly problematic area of your screenshot, click 'confirm' to create an annotation box on the right.</li>
                                 <li>Select an appropriate domain and use the checkboxes in the annotation box to note what the issue is.</li>
                                 <li>Choose a document template, view the preview and save the generated document to your device.</li>
                             </ul>
+                            <br/>
+                            <p>If there are no notable issues with the screenshot please just highlight a random area of the image and pick a random issue from the list!</p>
                         </div>
                         <div className="col-6">
                             <img className="gif" id="gif" src={HowTo}/>

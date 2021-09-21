@@ -9,7 +9,7 @@ var defaultTemplate =
 
 {{#boxes}} 
 <div style =\"border:1px solid black; padding: 2%;\"> 
-<h2>Highligted Issue #{{number}}</h2> 
+<h2>Highlighted Issue #{{number}}</h2> 
 <p><b>Domain Used: </b> {{domain}}</p>
 
 {{#issues}} 

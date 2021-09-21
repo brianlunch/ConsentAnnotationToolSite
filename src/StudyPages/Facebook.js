@@ -1,18 +1,17 @@
 /*global chrome*/
 import React from 'react';
-import ImageAnnotation from '../ImageAnnotation/ImageAnnotation';
+import ImageAnnotation from '../Components/ImageAnnotation/ImageAnnotation';
 import './Report.css'
-import it from '../../images/IrishTimes.PNG'
-import consent from '../../images/consent.png'
-import test from '../../images/test.jpg'
+
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
-import Help from '../Help/Help';
-import Facebook1 from '../../images/Facebook/Facebook1.PNG'
-import Facebook2 from '../../images/Facebook/Facebook2.PNG'
-import Facebook3 from '../../images/Facebook/Facebook3.PNG'
+import Help from '../Components/Help/Help';
+import Facebook1 from '../images/Facebook/Facebook1.PNG'
+import Facebook2 from '../images/Facebook/Facebook2.PNG'
+import Facebook3 from '../images/Facebook/Facebook3.PNG'
+import Facebook4 from '../images/Facebook/Facebook4.PNG'
 
-class Report extends React.Component {
+class Facebook extends React.Component {
 
     constructor(props) {
         super(props);
@@ -38,17 +37,22 @@ class Report extends React.Component {
         var images = [
             {
                 "img": Facebook1,
-                "url": "www.Facebook.ie",
+                "url": "www.Facebook.com",
                 "time": "Wed, 14 Apr 2021 13:17:30 GMT"
             },
             {
                 "img": Facebook2,
-                "url": "www.Facebook.ie",
+                "url": "www.Facebook.com",
                 "time": "Wed, 14 Apr 2021 13:17:30 GMT"
             },
             {
                 "img": Facebook3,
-                "url": "www.Facebook.ie",
+                "url": "www.Facebook.com",
+                "time": "Wed, 14 Apr 2021 13:17:30 GMT"
+            },
+            {
+                "img": Facebook4,
+                "url": "www.Facebook.com",
                 "time": "Wed, 14 Apr 2021 13:17:30 GMT"
             }
         ]
@@ -88,4 +92,4 @@ class Report extends React.Component {
     }
 }
 
-export default Report;
+export default Facebook;

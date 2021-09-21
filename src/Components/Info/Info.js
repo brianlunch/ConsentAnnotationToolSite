@@ -1,6 +1,6 @@
 import React from 'react';
 import './Info.css'
-import { FaQuestionCircle, FaGithub, FaChrome } from 'react-icons/fa'
+import { FaQuestionCircle, FaGithub, FaChrome, Fa, FaLink} from 'react-icons/fa'
 
 
 const Info = () => {
@@ -54,29 +54,27 @@ const Info = () => {
                 <h3>Contributors</h3>
                 <br />
 
-                <div className="row">
+                <div className="row text-center">
                     <div className="col">
                         <h4>Brian Lynch</h4>
                         <p>Project Developer</p>
-                        <div className="row" style={{"paddingLeft":"15px"}}>
-                            <a href="http://github.com/brianlunch" target="_blank"><h4><FaGithub className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
-                            <a href="http://github.com/brianlunch" target="_blank"><h4><FaGithub className="zoom" /></h4></a>
+                        <div className=" text-center" style={{"paddingLeft":"15px"}}>
+                            <a href="https://brianlunch.github.io/Personal/#/" target="_blank"><h4><FaLink className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
                         </div>
                     </div>
                     <div className="col">
                         <h4>Harshvardhan Pandit</h4>
                         <p>Project Supervisor</p>
-                        <div className="row" style={{"paddingLeft":"15px"}}>
-                            <a href="http://github.com/brianlunch" target="_blank"><h4><FaGithub className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
-                            <a href="http://github.com/brianlunch" target="_blank"><h4><FaGithub className="zoom" /></h4></a>
+                        <div className="" style={{"paddingLeft":"15px"}}>
+                            <a href="https://harshp.com/" target="_blank"><h4><FaLink className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
+                            
                         </div>
                     </div>
                     <div className="col">
                         <h4>Dave Lewis</h4>
                         <p>Project Supervisor</p>
-                        <div className="row" style={{"paddingLeft":"15px"}}>
-                            <a href="http://github.com/brianlunch" target="_blank"><h4><FaGithub className="zoom"  style={{"marginRight":"12px"}}/></h4></a>
-                            <a href="http://github.com/brianlunch" target="_blank"><h4><FaGithub className="zoom" /></h4></a>
+                        <div className="" style={{"paddingLeft":"15px"}}>
+                        <a href="https://www.tcd.ie/research/profiles/?profile=delewis" target="_blank"><h4><FaLink className="zoom"  style={{"marginRight":"12px"}}/></h4></a>  
                         </div>
                     </div>
 

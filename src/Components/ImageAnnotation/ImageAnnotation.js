@@ -6,12 +6,14 @@ import './ImageAnnotation.css'
 import Tab from 'react-bootstrap/Tab'
 import templates from '../../templates'
 import colors from '../../color'
+import {Modal} from 'react-bootstrap'
 import {
     PointSelector,
     RectangleSelector,
     OvalSelector
 } from 'react-image-annotation/lib/selectors'
 import MustacheGen from '../MustacheGen/MustacheGen';
+
 
 var count = 0;
 
@@ -167,7 +169,7 @@ function renderEditor(props) {
             className="text-left bg-white"
         >
             <br></br>
-            <button className="btn btn-outline-dark"
+            <button className="btn btn-outline-primary z"
                 onClick={e => props.onChange({
                     ...props.annotation,
                     data: {
@@ -211,7 +213,9 @@ export default class ImageAnnotation extends Component {
             activeAnnotations: [],
             issues: [],
             idk: [],
-            template: 0
+            modal: false,
+            template: 0,
+            click:true
         };
     }
 
@@ -273,6 +277,14 @@ export default class ImageAnnotation extends Component {
         count++;
     }
 
+    modal = () =>{
+        this.setState({modal:true})
+    }
+
+    clickM = () =>{
+        this.setState({click: !this.state.click})
+    }
+
     onChange = (annotation, func) => {
         this.setState({ annotation }, func)
     }
@@ -297,15 +309,15 @@ export default class ImageAnnotation extends Component {
 
         return (
 
-            <div className="">
-
-
+            <div className="text-left" onClick={this.clickM}>
+                <b>Click and drag to highlight problematic areas of the image. Select random area if unsure.</b><br/>
+                
                 <div class="row annotateRow no-print">
                     <div class="col-8 imageSide">
-
-
-                        <div className="annotation col-12">
-
+                   
+                   
+                        <div className="annotation uploadedImage col-12">
+                        
                             <Annotation
                                 src={this.props.img}
                                 id={"target" + this.props.i}
@@ -323,9 +335,12 @@ export default class ImageAnnotation extends Component {
                                 renderContent={renderContent}
                                 renderOverlay={renderOverlay}
                             />
+                             
                         </div>
+                        
                         <br />
-                        <div className="row align-items-end">
+                       
+                        <div className="row align-items-start">
 
                             <div className="col-6 text-left ">
                                 <p>{"Image source: " + this.props.url}</p>
@@ -334,12 +349,13 @@ export default class ImageAnnotation extends Component {
 
                             <div class="col-6 text-left">
                                 <i>Choose a Document Template (Preview Below):</i>
-                                
+
                                 <select onChange={(e) => this.setState({ template: e.target.value })} className="custom-select2 mr-sm-2" id="inlineFormCustomSelect" name="duration">
                                     {templates.map((template, index) => <option value={index}>{template.name}</option>)}
                                 </select>
-                                <br/>
-                                <button className="btn btn-theme w-100" onClick={function (e) { window.print(); }}>Save Document</button>
+                                <br />
+                                <button className="btn btn-theme w-100" onClick={ (e) => { window.print(); this.modal(); }}>Save Document</button>
+                                <b>Click here when you are haved used the tool.</b>
                             </div>
                         </div>
 
@@ -364,6 +380,7 @@ export default class ImageAnnotation extends Component {
                             issues={this.state.issues}
                             onMouseOver={this.onMouseOver}
                             onMouseOut={this.onMouseOut}
+                            onClickM={this.clickM}
                         />
 
                     </div>
@@ -386,6 +403,18 @@ export default class ImageAnnotation extends Component {
 
                 </div>
 
+                <Modal show={this.state.modal} onHide={() => { this.setState({modal:false});}}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Are you finished testing the tool?</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p>If you are <b>please return to the questionnaire tab</b> by clicking the Questionnaire tab at the top of your browser.</p><br/>
+                    <p>If not, close this pop up and feel free to continue testing the tool!</p></Modal.Body>
+                    <Modal.Footer>
+                       
+       
+                    </Modal.Footer>
+                </Modal>
 
 
             </div>

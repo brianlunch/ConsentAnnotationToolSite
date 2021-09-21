@@ -63,7 +63,18 @@ const issues =
 
             {
               "lawName": "GDPR Article 7(3)",
-              "lawDescription": "The data subject shall have the right to withdraw his or her consent at any time. 2The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. 3Prior to giving consent, the data subject shall be informed thereof. 4It shall be as easy to withdraw as to give consent."
+              "lawDescription": "The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent."
+            }
+          ]
+        },
+
+        {
+          "value": "Other",
+          "laws": [
+
+            {
+              "lawName": " ",
+              "lawDescription": " "
             }
           ]
         }
@@ -155,6 +166,16 @@ const issues =
               "lawDescription": "The data subject shall have the right to withdraw his or her consent at any time. 2The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. 3Prior to giving consent, the data subject shall be informed thereof. 4It shall be as easy to withdraw as to give consent."
             }
           ]
+        },
+        {
+          "value": "Other",
+          "laws": [
+
+            {
+              "lawName": " ",
+              "lawDescription": " "
+            }
+          ]
         }
       ]
     },
@@ -163,46 +184,42 @@ const issues =
       "domain": "UI",
       "terms": [
         {
-          "value": "UI Consent Buttons are different colours.",
+          "value": "Consent Buttons are different colours.",
           "laws": [
 
             {
-              "lawName": "Article 7(4)",
-              "lawDescription": "When assessing whether consent is freely given, utmost account shall be taken of whether… the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract"
-            },
-            {
-              "lawName": "Article 7(5)",
-              "lawDescription": " 2 Assessing whether consent is freely given, utmost account shall be taken of whether… the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract"
+              "lawName": "GDPR Article 4 (11)",
+              "lawDescription": "Consent' of the data subject means any freely given, specific, informed and unambiguous indication of the data subject's wishes by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her. The difference in colour may subconsciously make you select accept"
             }
           ]
         },
         {
-          "value": "UI There is no reject button.",
+          "value": "The Consent dialogue box utilises Dark Patterns",
           "laws": [
 
             {
-              "lawName": "Article 7(4)",
-              "lawDescription": "When assessing whether consent is freely given, utmost account shall be taken of whether… the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract"
+              "lawName": "GDPR Article 4(11)",
+              "lawDescription": "Consent of the data subject means any freely given, specific, informed and unambiguous indication of the data subject's wishes by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her."
             }
           ]
         },
         {
-          "value": "UI I do not know what I am consenting to.",
+          "value": "They utilise 'Design Nudges'",
           "laws": [
 
             {
-              "lawName": "Article 7(4)",
-              "lawDescription": "When assessing whether consent is freely given, utmost account shall be taken of whether… the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract"
+              "lawName": "GDPR Article 4 (11)",
+              "lawDescription": "Consent' of the data subject means any freely given, specific, informed and unambiguous indication of the data subject's wishes by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her. The nudge may subconsciously make you select accept"
             }
           ]
         },
         {
-          "value": "UI Choice 'accept all' is pre-highlighted",
+          "value": "Other",
           "laws": [
 
             {
-              "lawName": "Article 7(4)",
-              "lawDescription": "When assessing whether consent is freely given, utmost account shall be taken of whether… the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract"
+              "lawName": " ",
+              "lawDescription": " "
             }
           ]
         }

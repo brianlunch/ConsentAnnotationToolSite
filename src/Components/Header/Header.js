@@ -27,7 +27,7 @@ class Header extends React.Component {
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-3">
-                                <a target="_blank" href ="https://github.com/brianlunch/ConsentAnnotationTool">
+                                <a target="_blank" href ="https://chrome.google.com/webstore/detail/consent-annotation-tool/npcbkabbfegjnmeaaehjlebbimfbodia?hl=en-GB">
                                     <HeaderItem title="Chrome Extension"><FaChrome /></HeaderItem>
                                 </a>
 
